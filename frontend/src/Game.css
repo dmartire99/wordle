@@ -1,0 +1,87 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.letter {
+    height: 50px;
+    width: 50px;
+    margin: 1rem;
+    border: 1px solid white;
+    font-size: x-large
+}
+
+.letterGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: calc(8 * 50px + 7 * 10px);
+    margin: 2rem auto;
+}
+
+.letterGridItem {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.correct {
+    background-color: green;
+}
+
+.inword {
+    background-color: rgb(209, 207, 70);
+}
+
+.notinword {
+    background-color: grey;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(-8px);
+    }
+
+    30% {
+        transform: translateX(8px);
+    }
+
+    45% {
+        transform: translateX(-6px);
+    }
+
+    60% {
+        transform: translateX(6px);
+    }
+
+    75% {
+        transform: translateX(-3px);
+    }
+
+    90% {
+        transform: translateX(3px);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
